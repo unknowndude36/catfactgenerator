@@ -18,7 +18,7 @@ const getFact = () => {
 	axios
 		.get("https://catfact.ninja/fact")
 		.then((data) => setFact(data.data.fact))
-		.catch(buildFact("Oops... Something Went Wrong."));
+		.catch(setFact("Oops... Something Went Wrong."));
 };
 
 const setImage = (url) => {
