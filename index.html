@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Cat Fact Generator</title>
+	</head>
+	<body>
+		<header>
+			<h1>Cat Fact Generator</h1>
+		</header>
+
+		<div id="background"></div>
+
+		<main id="main-content">
+			<div class="container">
+				<div class="content-box">
+					<h2>Press the button to generate a fact.</h2>
+					<div class="fetched-data-box">
+						<img
+							id="cat-image"
+							src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Ftiny-white-kitten-873941684-2000.jpg"
+						/>\
+						<div class="fact">
+							<p id="fact-element">Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>
+
+					<button id="refresh" class="btn">
+						Refresh <i class="fa-solid fa-rotate"></i>
+					</button>
+				</div>
+			</div>
+		</main>
+
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/2cf8748876.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="src/index.js"></script>
+	</body>
+</html>
